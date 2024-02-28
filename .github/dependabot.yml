@@ -1,0 +1,10 @@
+# A dependabot configuration
+#
+# 1) it should update my github actions to the latest version every day
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "daily"
