@@ -32,8 +32,7 @@ jobs:
 
       - name: Terraform Plan
         if: github.ref != 'refs/heads/main'
-        run: env && terraform apply -auto-approve
+        run: terraform plan
 
-      - name: Terraform Apply
-        if: github.ref == 'refs/heads/main'
+      - if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve
