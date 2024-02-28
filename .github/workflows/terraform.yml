@@ -13,7 +13,7 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     env:
-      HETZNER_DNS_API_TOKEN: ${secrets.HETZNER_DNS_API_TOKEN}
+      HETZNER_DNS_API_TOKEN: ${{ secrets.HETZNER_DNS_API_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
