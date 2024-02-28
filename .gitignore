@@ -1,0 +1,5 @@
+.env
+
+# local .tfstate files
+.terraform.lock.hcl
+.terraform
